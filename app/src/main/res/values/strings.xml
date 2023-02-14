@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NPM Fifa DB</string>
+    <array name="tipos">
+        <item>Lenda</item>
+        <item>Especial</item>
+        <item>TOTY</item>
+        <item>TOTS</item>
+        <item>Normal</item>
+    </array>
+    <array name="melhor_pe">
+        <item>Esquerdo</item>
+        <item>Direito</item>
+    </array>
+</resources>

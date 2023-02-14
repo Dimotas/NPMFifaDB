@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base__15"
+    android:padding="33dp"
+    tools:context=".Inserir">
+
+    <ImageView
+        android:id="@+id/img_foto_inserir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/fundo"
+        android:minWidth="180dp"
+        android:minHeight="200dp"
+        android:padding="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome_inserir"></ImageView>
+
+    <EditText
+        android:id="@+id/edit_nome_inserir"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/amrelo"
+        android:gravity="center_horizontal"
+        android:hint="Nome Jogador"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_pontuacao_inserir"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/amrelo"
+        android:gravity="center_horizontal"
+        android:hint="Pontuação"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_foto_inserir"></EditText>
+
+    <Button
+        android:id="@+id/bt_inert_inserir"
+        android:layout_width="377dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/amrelo"
+        android:text="Adicionar"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.924" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="400dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/amrelo"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pontuacao_inserir"
+        tools:layout_editor_absoluteX="-28dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
